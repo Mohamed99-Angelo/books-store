@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Destination</title>
+    <link href="../styles/addData.css" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    rel="stylesheet"/>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Add Book</h2>
+        <form id="addDestinationForm">
+
+            <label for="destinationTitle">Title</label>
+            <input type="text" id="destinationTitle" name="destinationName" required>
+
+
+            <label for="destinationPrice">Auther</label>
+            <input type="text" id="pricePerNight" name="destinationPrice" required>
+
+            <label for="destinationDescription">Description</label>
+            <input type="text" id="description" name="destinationDescription" required>
+            
+            <label for="destinationDescription">Type</label>
+            <input type="text" id="type" name="destinationDescription" required>
+   
+
+            <label for="destinationImage">Image URL</label>
+            <input type="text" id="imgs" name="destinationImage" required>
+
+            <label for="destinationTips">Tips</label>
+            <input type="text" id="tips" name="destinationTips" required>
+
+
+            <label for="destinationTips">rating</label>
+            <input type="text" id="rating" name="rating" required>
+
+
+
+            <button type="submit"  id="add" class="btn-submit">Add Destination</button>
+        </form>
+        <a  class ="btn" href="admin.html"> Return to admin page </a>
+    </div>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="../js/add.js"></script>
+</body>
+</html>

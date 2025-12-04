@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Statistics - Admin Dashboard</title>
+<link rel="stylesheet" href="../styles/statistics.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>Admin</h2>
+    <a href="admin.html">Dashboard</a>
+    <a href="TrackOrder.html">Order Management</a>
+    <a class="active" href="Statistics.html">Statistics</a>
+    <a href="Users.html">User Management</a>
+</div>
+
+<div class="main">
+
+    <div class="header">
+        <h1>Inventory & Statistics</h1>
+        <div>Welcome, Admin</div>
+    </div>
+
+    <!-- Summary Boxes -->
+    <section class="stats-cards">
+        <div class="card">
+            <h3>Total Sales</h3>
+            <p id="stat-sales">$0</p>
+        </div>
+        <div class="card">
+            <h3>Top Selling Book</h3>
+            <p id="stat-top">-</p>
+        </div>
+        <div class="card">
+            <h3>Total Orders</h3>
+            <p id="stat-orders">0</p>
+        </div>
+    </section>
+
+    <!-- Sales Chart -->
+    <section class="chart-section">
+        <h2>Monthly Sales Chart</h2>
+        <div class="chart-container">
+            <canvas id="salesChart"></canvas>
+        </div>
+    </section>
+
+    <!-- Category Stats -->
+    <section class="table-section">
+        <h2>Top Categories</h2>
+        <table>
+            <tr>
+                <th>Category</th>
+                <th>Books Sold</th>
+            </tr>
+            <tr>
+                <td>Fantasy</td>
+                <td>420</td>
+            </tr>
+            <tr>
+                <td>Romance</td>
+                <td>380</td>
+            </tr>
+        </table>
+    </section>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../js/statistics.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookloria</title>
+  <link rel="stylesheet" href="../styles/BookingBage.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+     <link
+    href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    rel="stylesheet"/>
+</head>
+
+<body>
+<nav>
+  <div class="nav__header">
+    <div class="nav__logo">
+      <a href="Home.html" class="logo">Bookloria</a>
+    </div>
+    <div class="nav__menu__btn" id="menu-btn">
+      <i class="ri-menu-line"></i>
+    </div>
+  </div>
+  <ul class="nav__links" id="nav-links">
+    <li><a href="Home.html">HOME</a></li>
+    <li><a href="Books.html">Books</a></li>
+    <li><a href="Contact.html">CONTACT</a></li>
+        <li></li>
+  </ul>
+    <div class="nav__btns">
+  <button id="change-button" class="btn">
+    <a id="change-link" href="Logn in.html">
+     <i class="fa-solid fa-user"></i>
+    </a>
+  </button>
+</div>
+</nav>
+
+  <div class="animated-bg"></div>
+  
+  <div class="floating-shapes">
+    <div class="floating-shape"></div>
+    <div class="floating-shape"></div>
+    <div class="floating-shape"></div>
+  </div>
+
+   
+
+  <div class="container">
+    <div class="main-content">
+      <div class="image-gallery">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.ObU_FFsnsPLSiKtRFAZWjgHaJR?w=1080&h=1353&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Destination Image" class="main-image" id="mainImage">
+        <div class="thumbnail-images" id="thumbnails"></div>
+      </div>
+
+      <div class="destination-header">
+        <div class="destination-info">
+          <h1 id="destinationTitle"></h1>
+          <div class="rating" id="rating"></div>
+          <div class="type" id="type"></div>
+        </div>
+        <div class="price-box">
+          <div class="price" id="price"></div>
+          <button class="booking-btn" id="bookNowBtn">Book Now</button>
+        </div>
+      </div>
+
+      <div class="description">
+        <p id="desc"></p>
+      </div>
+
+      <div class="travel-tips">
+        <h2 class="section-title">Reading Tips</h2>
+        <p id="tips"></p>
+      </div>
+
+      <div class="reviews">
+        <h2 class="section-title">Customer Reviews</h2>
+        <div id="reviews"></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>  
+  <script src="../js/BookingPageLogic.js"></script>
+</body>
+</html>
